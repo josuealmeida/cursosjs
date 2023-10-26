@@ -1,0 +1,221 @@
+@import 'https://unpkg.com/ress/dist/ress.min.css';
+@import 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap';
+@import 'https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css';
+
+$dark: #242735;
+$gray: #767986;
+$light: hsl(0 0% 96%);
+$white: hsl(0 0% 100%);
+$primary: #0e57e1;
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Inter', sans-serif;
+	color: $dark;
+}
+
+.container{
+	max-width: 1180px;
+	margin: auto;
+}
+
+// navbar logo
+#navbar__logo{
+	text-decoration: none;
+	color: $dark;
+	font-size: 1.5rem;
+	font-weight: 700;
+
+	.highlght{
+		color: $primary;
+	}
+}
+
+// header
+#main-header{
+	text-align: center;
+	padding: 80px 20px;
+
+	#main-title{
+		font-size: 2.5rem;
+		font-weight: 900;
+
+		@media (min-width: 568px){
+			font-size: 4rem;
+		}
+	}
+
+	#main-subtitle{
+		font-size: 1.5rem;
+		padding-top: 25px;
+		color: $gray;
+	}
+}
+
+// icons: dev tools
+#dev-tools-list{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+	font-size: 2rem;
+
+	.bx{
+		color: $gray;
+	}
+}
+
+// section: courses
+#cursos{
+	margin-top: 50px;
+	padding: 20px;
+
+	&__title{
+		font-size: 1.25rem;
+	}
+
+	#course-card-grid{
+		margin-top: 30px;
+		display: grid;
+		grid-gap: 30px;
+		
+		@media (min-width: 568px){
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media (min-width: 928px){
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		.course-card{
+			border-radius: 10px;
+			box-shadow: 0 5px 10px hsla(0, 0%, 50%, 0.2);
+			overflow: hidden;
+
+			.card-image{
+				width: 100%;
+			}
+
+			.card-body{
+				padding: 20px;
+
+				.card-title{
+					font-size: 1.25rem;
+					text-transform: capitalize;
+				}
+
+				.bottom{
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+
+					.card-price{
+						font-size: 1.5rem;
+						padding-top: 20px;
+					}
+
+					.card-button{
+						display: inline-block;
+						text-decoration: none;
+						background: $primary;
+						padding: 12px 28px;
+						color: $white;
+						margin-top: 30px;
+						border-radius: 100px;
+					}
+				}
+			}
+		}
+	}
+}
+
+// section: metodo
+#metodo{
+	margin-top: 100px;
+	padding: 20px;
+
+	.container{
+		display: grid;
+		grid-gap: 30px;
+
+		@media (min-width: 928px){
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	&__image{
+		width: 100%;
+		box-shadow: 0 5px 15px hsla(0, 0%, 50%, 0.5);
+	}
+
+	&-content{
+		&__title{
+			font-size: 1.75rem;
+			font-weight: 900;
+
+			@media (min-width: 568px){
+				font-size: 2.5rem;
+			}
+		}
+
+		&__paragraph{
+			font-size: 1.15rem;
+			line-height: 1.65;
+			padding-top: 25px;
+		}
+	}
+}
+
+// section: about
+#sobre{
+	margin-top: 80px;
+	padding: 20px;
+
+	&__title{
+		font-size: 1.75rem;
+		font-weight: 900;
+
+		@media (min-width: 568px){
+			font-size: 2.5rem;
+		}
+	}
+
+	&__paragraph{
+		font-size: 1.15rem;
+		line-height: 1.65;
+		padding-top: 25px;
+	}
+}
+
+#social-medias{
+	margin: 25px 0;
+
+	.title{
+		font-weight: 500;
+	}
+
+	.bx{
+		text-decoration: none;
+		font-size: 2rem;
+		color: $dark;
+	}
+}
+
+#whatsapp-button{
+	@keyframes pula-pula{
+		to{transform: translateY(-15px);}
+	}
+
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	width: 60px;
+	animation: pula-pula 0.65s ease infinite alternate;
+
+	img{
+		width: 100%;
+	}
+}

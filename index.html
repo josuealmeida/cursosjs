@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cursos JS - Domine as tecnologias web</title>
+
+		<!-- stylesheet -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	
+	<body>
+		<!-- navbar -->
+		<nav class="navbar navbar-expand-md navbar-light bg-white" id="navbar">
+		  <div class="container">
+			  <a href="./" id="navbar__logo" class="navbar-brand">
+					<span>Cursos</span>
+					<span class="highlght">{JS}</span>
+				</a>
+
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarNav">
+			    <ul class="navbar-nav ml-auto" id="nav-links">
+			      <li class="nav-item active">
+			        <a class="nav-link nav-links__item" href="#">Início</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link nav-links__item" href="#cursos">Cursos</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link nav-links__item" href="#sobre">Sobre</a>
+			      </li>
+			    </ul>
+			  </div>
+		  </div>
+		</nav>
+
+		<!-- header -->
+		<header id="main-header">
+			<div class="container">
+				<h1 id="main-title">Domine as tecnologias da web através de nossos cursos</h1>
+				<p id="main-subtitle">Aprenda desde os fundamentos até as tecnologias mais avançadas</p>
+			</div>
+		</header>
+
+		<!-- icons: dev tools -->
+		<div id="dev-tools-list">
+			<span class="bx bxl-html5"></span>
+			<span class="bx bxl-css3"></span>
+			<span class="bx bxl-javascript"></span>
+			<span class="bx bxl-react"></span>
+			<span class="bx bxl-git"></span>
+		</div>
+
+		<!-- section: courses -->
+		<section id="cursos">
+			<div class="container">
+				<h2 id="cursos__title">Cursos</h2>
+
+				<div id="course-card-grid">
+					<!-- 1: course card -->
+					<div class="course-card">
+						<img class="card-image" src="img/web_dev.jpg" alt="">
+						
+						<div class="card-body">
+							<h3 class="card-title">Curso de HTML, CSS e JavaScript + 4 projetos práticos</h3>
+							
+							<div class="bottom">
+								<p class="card-price">R$ 119,99</p>
+								<a class="card-button" href="https://pay.kiwify.com.br/1pqATLE">Comprar</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- 2: course card -->
+					<div class="course-card">
+						<img class="card-image" src="img/react.jpg" alt="">
+						
+						<div class="card-body">
+							<h3 class="card-title">Crie páginas dinâmicas com React JS + 2 projetos práticos</h3>
+							
+							<div class="bottom">
+								<p class="card-price">R$ 89,99</p>
+								<a class="card-button" href="https://pay.kiwify.com.br/cJNqutZ">Comprar</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- 3: course card -->
+					<div class="course-card">
+						<img class="card-image" src="img/folder_git.jpg" alt="">
+						
+						<div class="card-body">
+							<h3 class="card-title">Arquitetura de projetos front-end [diretórios, convenções, git]</h3>
+							
+							<div class="bottom">
+								<p class="card-price">R$ 64,99</p>
+								<a class="card-button" href="https://pay.kiwify.com.br/34GnGOk">Comprar</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- section: metodo -->
+		<section id="metodo">
+			<div class="container">
+				<img src="img/code.png" alt="" id="metodo__image">
+
+				<div id="metodo-content">
+					<h2 id="metodo-content__title">Metodologia focada no conhecimento dos fundamentos das tecnologias</h2>
+					<p id="metodo-content__paragraph">A metodologia dos nossos cursos de tecnologias web se concentra em fornecer aos alunos uma compreensão abrangente dos conhecimentos fundamentais necessários para desenvolver competências sólidas nesse campo em constante evolução. O currículo é estruturado de forma a garantir que os alunos obtenham uma base sólida em conceitos-chave, incluindo as principais linguagens da web: HTML, CSS e JavaScript.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- section: about -->
+		<section id="sobre">
+			<div class="container">
+				<h2 id="sobre__title">Sobre nós</h2>
+				<p id="sobre__paragraph">Somos uma empresa de tecnologia web formada por uma equipe de estudantes do Centro Estadual de Educação Profissional em Tecnologia, Informática e Comunicação. Queremos ensinar as tecnologias modernas da web trazendo conceitos atualizados com aplicações reais.</p>
+				<img id="sobre__img" src="img/ceeptic.jpg" alt="" class="w-100 mt-4 rounded">
+			</div>
+		</section>
+
+		<!-- footer -->
+		<footer id="social-medias">
+			<div class="container text-center">
+				<p class="title">Redes sociais</p>
+				<div class="text-dark h4">
+					<a href="https://www.instagram.com/" class="bx bxl-instagram"></a>
+					<a href="https://telegram.org/" class="bx bxl-telegram"></a>
+					<a href="https://api.whatsapp.com/send/?phone=7112341234" class="bx bxl-whatsapp"></a>
+				</div>
+			</div>
+		</footer>
+
+		<!-- whatsapp button -->
+		<a id="whatsapp-button" href="https://api.whatsapp.com/send/?phone=7112341234" title="Fale conosco">
+			<img src="img/whatsapp-logo.png" alt="">
+		</a>
+
+
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</body>
+</html>
